@@ -1,0 +1,111 @@
+
+body {
+  background: #fff ;
+  scroll-behavior: smooth;
+}
+
+
+.nav-item .nav-link {
+  color: #fff;
+}
+
+
+.main {
+  height: 100vh;
+  background-image: url("../images/pexels-bemistermister-2442888.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.main {
+  animation: fadeInUp 1.5s ease-out;
+  animation-fill-mode: both;
+}
+
+:target {
+  animation: fadeInUp 1.5s ease-out;
+}
+
+
+
+#skills i {
+  height: 100px;
+  width: 100px;
+}
+
+#project img {
+  height: 300px;
+  object-fit: cover;
+}
+
+#about .img,
+#about img,
+.hire-text h2 {
+  position: relative;
+}
+
+
+#about .img::before {
+  content: "";
+  left: 50%;
+  width: 4px;
+  position: absolute;
+  height: 100% + 140px;
+  background: #ccc;
+}
+
+#about img,
+#about .hire-text h2 {
+  width: 140px;
+}
+
+#about .hire-text h2 {
+  height: 140px;
+}
+
+.social-icons a {
+  width: 40px;
+  height: 40px;
+}
+
+footer .social-icons a {
+  width: 30px;
+  height: 30px;
+}
+
+#cv img {
+  width: 230px;
+}
+
+
+#contact {
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-image: url("../images/contact-bg.jpeg");
+}
+
+@media screen and (max-width: 990px) {
+  #skills .card {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 668px) {
+  #skills .card,
+  #portfolio .card-wrapper {
+    width: 100%;
+  }
+}
